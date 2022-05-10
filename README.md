@@ -34,7 +34,7 @@
 		\begin{align}
 			\ln{C} = -kt+\ln{C_0}\label{2}
 		\end{align}
-		其中，$C_0$为反应物初浓度。注意到，当$C=\dfrac{1}{2}C_0$时，反应物浓度变为初始值的一半，此时的时间$t_{\frac{1}{2}}$称为一级反应的半衰期。由\eqref{2}得：
+		其中，$C_0$为反应物初浓度。注意到，当$C=\frac{1}{2}C_0$时，反应物浓度变为初始值的一半，此时的时间$t_{\frac{1}{2}}$称为一级反应的半衰期。由\eqref{2}得：
 		\begin{align}
 			t_{\frac{1}{2}} = \frac{\ln{2}}{k}=\frac{0.693}{k}\label{3}
 		\end{align}
