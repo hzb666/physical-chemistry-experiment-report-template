@@ -45,6 +45,6 @@
 	\section{实验步骤}
 \end{document}
 ```
-![1](https://user-images.githubusercontent.com/29155232/167645553-539e6a33-9364-41bb-a409-3b7818a9bf96.png)
-![2](https://user-images.githubusercontent.com/29155232/167645568-697a9db6-33f0-490d-9764-1887694796db.png)
+![1](https://user-images.githubusercontent.com/29155232/167646236-98fe6da5-5669-4e10-8a3f-46f40c9c5736.png)
+![2](https://user-images.githubusercontent.com/29155232/167646250-d2d2f970-70d4-418f-bf7e-c43a89019c0d.png)
 
