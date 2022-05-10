@@ -1,10 +1,10 @@
 # physical-chemistry-experiment-report-template
-最小示例如下，请自行查询cls文件安装方法。
+最小示例如下，请自行查询cls文件安装方法，请注意需要下载/graphs文件夹。
 ```latex
 \documentclass{pkureport}
 \labtitle{实验名称}
 \labdate{日期}
-\labtemperature{温度}%$^{\circ}$C可以打出摄氏度符号%
+\labtemperature{温度}
 \labpressure{气压}
 \labpartner{合作者}
 \yourname{姓名}
