@@ -1,5 +1,7 @@
 # physical-chemistry-experiment-report-template
 最小示例如下，请自行查询cls文件安装方法，请注意需要下载/graphs文件夹。
+
+请使用texlive套件，并用xelatex编译。
 ```latex
 \documentclass{pkureport}
 \labtitle{实验名称}
