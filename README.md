@@ -45,5 +45,6 @@
 	\section{实验步骤}
 \end{document}
 ```
-![pkureport_页面_1](https://user-images.githubusercontent.com/29155232/167645265-66f5e81e-7928-4ca3-9fd1-a0c0e8b32ed8.jpg)
-![pkureport_页面_2](https://user-images.githubusercontent.com/29155232/167645297-8c795b65-4bac-4ebc-96af-2ef4e827f53f.jpg)
+![1](https://user-images.githubusercontent.com/29155232/167645553-539e6a33-9364-41bb-a409-3b7818a9bf96.png)
+![2](https://user-images.githubusercontent.com/29155232/167645568-697a9db6-33f0-490d-9764-1887694796db.png)
+
