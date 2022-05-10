@@ -13,16 +13,11 @@
 \usetikzlibrary{arrows}
 \RequirePackage{booktabs}
 \RequirePackage{geometry}
-\RequirePackage[backend=biber,style=gb7714-2015,citestyle=numeric-comp,maxnames=3,url=false,gbpub=false,gbnamefmt=uppercase]{biblatex}
-\DeclareFieldFormat{journaltitle}{\itshape{#1}}
-\DeclareFieldFormat[article,periodical]{volume}{\itshape{#1}}
-\DeclareFieldFormat{date}{\textbf{#1}}
-\addbibresource{document.bib}
 \RequirePackage{fancyhdr}
 \RequirePackage[titletoc,title]{appendix}
 \RequirePackage{caption}
 \RequirePackage{times}
-%\RequirePackage[lite,subscriptcorrection ,slantedGreek ,nofontinfo]{mtpro2}如果需要，请先安装mtpro2宏包。
+\RequirePackage[lite,subscriptcorrection ,slantedGreek ,nofontinfo]{mtpro2}
 \RequirePackage{fontspec}
 \setmainfont{Times New Roman}
 \RequirePackage{setspace}
@@ -56,9 +51,9 @@
 %\newtheorem{conclusion}{\indent 结论}
 %\newtheorem{assumption}{\indent 假设}
 %{
-%\newtheorem*{proof}{\indent 证明：}}如果需要请取消注释。
+%\newtheorem*{proof}{\indent 证明：}}
 \newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
-\newcommand{\degre}{\ensuremath{^\circ}}
+\newcommand{\degreec}{\ensuremath{^\circ}C}
 \newcommand{\bolang}{\,\textasciitilde\,}
 \CTEXsetup[format={\large\heiti}]{section}
 \CTEXsetup[format={\heiti}]{subsection}
@@ -142,3 +137,20 @@
 \g@addto@macro{\UrlBreaks}{\UrlAlphabet}
 \g@addto@macro{\UrlBreaks}{\UrlDigits}
 \makeatother
+%\newpage
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\fancyhead[R]{
+%	\begin{picture}(0,0)
+%		\put(-81.5,-10){\includegraphics[width=0.2\linewidth]{graphs/logo}}
+%	\end{picture}}
+%\fancyhead[LO,LE]{\textit{附录}~A\quad\textit{附录名称}}
+%\fancyfoot[CO,CE]{\thepage}
+%\begin{appendices}
+%\renewcommand{\appendixname}{附录}
+%\appendixtitleon
+%\section{源码}
+%
+%Latex源码见\url{https://github.com/hzb666/ibrutinib}
+%
+%\end{appendices}
