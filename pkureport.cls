@@ -17,7 +17,7 @@
 \RequirePackage[titletoc,title]{appendix}
 \RequirePackage{caption}
 \RequirePackage{times}
-\RequirePackage[lite,subscriptcorrection ,slantedGreek ,nofontinfo]{mtpro2}
+%\RequirePackage[lite,subscriptcorrection ,slantedGreek ,nofontinfo]{mtpro2}
 \RequirePackage{fontspec}
 \setmainfont{Times New Roman}
 \RequirePackage{setspace}
