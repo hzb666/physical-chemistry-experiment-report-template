@@ -1,0 +1,79 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{jiema}{book}{}
+      \name{author}{3}{}{%
+        {{hash=ae6d91050575e7cc729a71d376730ebd}{%
+           family={Garland},
+           familyi={G\bibinitperiod},
+           given={Carl\bibnamedelima W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=039c12ba1f530434bd2cf48a240fc5dc}{%
+           family={Nibler},
+           familyi={N\bibinitperiod},
+           given={Joseph\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=8a29ff82ef7b576e370f536d817a01cc}{%
+           family={Shoemaker},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Boston}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Higher Education}%
+      }
+      \strng{namehash}{f551d01f37d605ebcb4108e92723c6b5}
+      \strng{fullhash}{f551d01f37d605ebcb4108e92723c6b5}
+      \strng{bibnamehash}{f551d01f37d605ebcb4108e92723c6b5}
+      \strng{authorbibnamehash}{f551d01f37d605ebcb4108e92723c6b5}
+      \strng{authornamehash}{f551d01f37d605ebcb4108e92723c6b5}
+      \strng{authorfullhash}{f551d01f37d605ebcb4108e92723c6b5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8th ed}
+      \field{isbn}{978-0-07-282842-9}
+      \field{langid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Experiments in physical chemistry}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{150\bibrangessep 153\bibrangedash 154}
+      \range{pages}{3}
+      \verb{file}
+      \verb D\:\\huzhibin\\Documents\\Zotero\\storage\\Q8GZCL3Q\\Garland 等。 - 2009 - Experiments in physical chemistry.pdf
+      \endverb
+      \keyw{Chemistry; Physical and theoretical,Laboratory manuals}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

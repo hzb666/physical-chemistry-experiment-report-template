@@ -1,0 +1,129 @@
+\documentclass{pkureport}
+\usepackage[backend=biber,style=gb7714-2015,citestyle=numeric-comp,maxnames=3,url=false,gbpub=false,gbnamefmt=uppercase]{biblatex}
+\DeclareFieldFormat{journaltitle}{\itshape{#1}}
+\DeclareFieldFormat[article,periodical]{volume}{\itshape{#1}}
+\DeclareFieldFormat{date}{\textbf{#1}}
+\addbibresource{document.bib}
+\labtitle{燃烧热的测定}
+\labdate{2022.05.11}
+\labtemperature{}
+\labpressure{}
+\labpartner{}
+\yourname{胡志斌}
+\yourstuid{2010307316}
+\begin{document}
+	\makeheader
+	\section{实验目的}
+		\begin{enumerate}
+			\item 了解燃烧热的含义，掌握恒压燃烧热与恒容燃烧热的差异；
+			
+			\item 了解高压钢瓶的基本操作；
+			
+			\item 了解氧弹卡计的结构，通过标准物质法测定量热系统的热容和未知物的燃烧热；
+			
+			\item 了解雷诺作图法的原理，学会用雷诺作图法来校正温度差。
+		\end{enumerate}
+	\section{实验原理}
+		\subsection{燃烧热}
+		燃烧热是指1mol物质完全燃烧时的热效应。化学反应的热效应较难测量，但可通过盖斯定律用燃烧热间接求算，因此测量物质的燃烧热对于计算化学反应的热效应十分重要。
+		
+		实际的燃烧过程一般是在恒压条件下进行的，而测量燃烧热通常在密闭的氧弹卡计中（恒容）进行。由热力学第一定律可知，若燃烧在恒容下进行，体系不对外做功，恒容燃烧热等于体系内能的改变，即$Q_{V}=\Delta U$。一般燃烧热指恒压燃烧热$Q_{p}$：$$\Delta H=\Delta U+p \Delta V=Q_{V}+p \Delta V$$
+	
+		对于理想气体：$$Q_{p}=Q_{V}+\Delta n R T$$
+		
+		$\Delta H$值与温度有关：$$\frac{\partial\left(\Delta H\right)}{\partial T}=\Delta C_{p}$$
+		
+		但一般来说， 燃烧热随温度的变化不是很大， 在较小的温度范围内， 可认为是常数。
+	
+		测量燃烧热的基本方法是将导热性能良好的容器放在充满介质（如水）的绝热系统中，测量燃烧前后介质的温度变化。由于样品完全燃烧所释放的能量使得氧弹本身及其周围的介质和热量计有关附件的温度升高，测量介质在燃烧前后温度的变化值，就计算出该样品的燃烧热，因物质在燃烧前后容器的体积不变，可以测出得出恒容燃烧热$Q_V$。即将某定量的物质于氧弹卡计中完全燃烧，放出的热量使体系的温度升高 $\Delta T$，再根据体系的热容 $C_{V}$，即可计算燃烧反应的热效应为：
+		\begin{align}
+			Q_{V}=-C_{V} \Delta T\label{1}
+		\end{align}
+		
+		我们测量的燃烧热为每摩尔的恒容燃烧热，把相关数值代入\eqref{1}，得：
+		\begin{align}
+		-\frac{m}{M}Q_{m,V}=C\Delta T-2.926L\label{2}
+		\end{align}
+	
+		$ M $：待测物质的摩尔质量；
+		$ m $：待测物质的质量；
+		$ C $：氧弹卡计和水的总热容；
+		$ L $：铁丝的长度（设其燃烧值为–2.926J/cm）
+		
+		量热器总热容$C=m_{\text 水}C_{\text 水}+C_{\text 仪}$，一般用高纯度的苯甲酸来标定，其恒容燃烧热为$V_Q$=–3224.5kJ/mol。若每次实验时水量相等，并且同一台仪器的$C_{\text 仪}$不变，则$ C $可视为定值。
+		\begin{figure}[htbp]
+			\centering
+			\begin{minipage}[c]{0.5\textwidth}
+				\centering
+				\includegraphics[height = 8cm]{graphs/1}
+				\caption{氧弹式热量计构造\upcite{jiema}}
+			\end{minipage}%
+			\begin{minipage}[c]{0.5\textwidth}
+				\centering
+				\includegraphics[height=8cm]{graphs/2}
+				\caption{氧弹的结构}
+			\end{minipage}%
+		\end{figure}
+	\vspace*{-2em}
+		\subsection{雷诺作图}
+		由于仪器会通过搅拌等因素给予体系能量，同时热漏也是无法避免的，因此需要进行雷诺校正，来消除体系与环境间存在热交换造成的对体系温度变化的影响。
+		\begin{figure}[tbph]
+			\centering
+			\includegraphics[width=0.5\linewidth]{graphs/screenshot001}
+			\caption{雷诺作图法}
+			\label{fig:screenshot001}
+		\end{figure}
+		
+		设燃烧后量热器的温度~时间曲线如图\ref{fig:screenshot001}，ab 段是未点燃样品的阶段，由于搅拌做功和微弱吸热（环境比体系温度高），体系温度随时间微弱升高，使得 ab 线稍微上抬，b 点为开始燃烧的点，c 点为样品燃烧完毕的温度，cd 段为燃烧结束以后的温度～时间曲线，由于搅拌及热传递需要时间，cd 线并不是一条水平线，而是微微上抬（对绝热良好的系统）或下降的（绝热差的系统）。
+		
+		设 b、c 点的温度分别是 $ T_b $、$ T_c $，其平均温度$ T_M = \frac{1}{2} (T_b+T_c)$，在bc段上取点为$ M $，过 $M$做平行于纵轴的线AB，将 ab 线和 cd 线延长，与 AB 相交于 E、F 两点，则 E、F 两点所表示的温度差就是欲求的$\Delta T$，这就是雷诺作图校正温度的方法。严格来说，M 点应使得（曲边）三角形FMc和 MEb 的面积相同，但是根据教材上所写\upcite{jiema}，应该为（曲边）三角形 JMc 和 MKb面积相同。它一般适用在氧弹卡计的温度和外界环境的温度相差不太大时（一般不超过 2\bolang3°C）。
+	\section{仪器和药品}
+		氧弹卡计（数显）一套（包括测温探头、搅拌器、多功能控制箱、点火插头、外筒、内
+		筒、定位圈等）； 氧气钢瓶；电子天平（万分之一）；压片机；钝铁丝；万用电表；苯甲酸
+		（A.R.）； 萘（A.R.）；1000ml 量筒（或容量瓶）。
+	\section{实验步骤}
+	\clearpage
+	\section{实验结果与数据处理}
+		\subsection{将有关实验数据填入下表：}
+		\begin{table}[h]
+			\centering
+			\renewcommand\arraystretch{1.2}
+			\caption{药品质量与铁丝的燃烧热}
+			\begin{tabular}{@{}ccc@{}}
+				\toprule
+				& \makebox[0.3\textwidth][c]{苯甲酸} & \makebox[0.2\textwidth][c]{萘} \\ \midrule
+				铁丝初长度(cm)  &     &   \\
+				剩余铁丝长度(cm) &     &   \\
+				铁丝燃烧长度(cm) &     &   \\
+				铁丝的燃烧热     &     &   \\ \midrule
+				铁丝+药品质量(g) &     &   \\
+				药品质量(g)    &     &   \\ \bottomrule
+			\end{tabular}
+		\end{table}
+	
+		\begin{table}[h]
+			\centering
+			\renewcommand\arraystretch{1.2}
+			\caption{苯甲酸燃烧过程}
+			\begin{tabular}{@{}llllllllll@{}}
+				\toprule
+				时间(min)  & \makebox[0.8\textwidth][c]{}  \\ \midrule
+				温度(℃)  &    \\ \bottomrule
+			\end{tabular}
+		\end{table}
+	
+		\begin{table}[h]
+			\centering
+			\renewcommand\arraystretch{1.2}
+			\caption{萘的燃烧过程}
+			\begin{tabular}{@{}llllllllll@{}}
+				\toprule
+				时间(min)  & \makebox[0.8\textwidth][c]{}  \\ \midrule
+				温度(℃)  &    \\ \bottomrule
+			\end{tabular}
+		\end{table}
+		\subsection{通过雷诺作图法求出苯甲酸燃烧引起的温差 $ \Delta T_1 $，并计算量热器的热容。}
+		
+		\subsection{用雷诺作图法求出萘燃烧引起的温差 $ \Delta T_2 $，计算出萘的恒容燃烧热$ Q_V $，并计算萘的恒压燃烧热$ Q_p $。}
+	\printbibliography
+\end{document}
