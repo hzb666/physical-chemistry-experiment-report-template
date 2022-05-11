@@ -112,14 +112,17 @@
 \newcommand{\makeheader}{
 \centerline{\Large \@labtitle}
 \vspace*{1ex}
+
 \begin{table}[!htbp]
-	\centering
-	\begin{tabular*}{\linewidth}{lllllll}
-		实验时间：\tableunderline[66pt]\@labdate
-		室温：\tableunderline[35pt]\@labtemperature
-		大气压： \tableunderline[45pt]\@labpressure
+\centering
+ \addtolength{\leftskip} {-2cm}
+    \addtolength{\rightskip}{-2cm}
+\begin{tabular}{c}
+		实验时间：\tableunderline[62pt]\@labdate
+		室温：\tableunderline[38pt]\@labtemperature
+		大气压： \tableunderline[65pt]\@labpressure
 		合作者： \tableunderline[90pt]\@labpartner
-	\end{tabular*}
+\end{tabular}
 \end{table}
 \thispagestyle{titlepage}
 }
