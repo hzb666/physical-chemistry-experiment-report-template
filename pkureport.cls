@@ -52,8 +52,10 @@
 %\newtheorem{assumption}{\indent 假设}
 %{
 %\newtheorem*{proof}{\indent 证明：}}
+\setCJKfamilyfont{kaiti}{楷体}
+\newcommand{\kaiti}{\CJKfamily{kaiti}}
 \newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
-\newcommand{\degreec}{\ensuremath{^\circ}C}
+\newcommand{\degreec}{\ensuremath{\,^\circ}C}
 \newcommand{\bolang}{\,\textasciitilde\,}
 \CTEXsetup[format={\large\heiti}]{section}
 \CTEXsetup[format={\heiti}]{subsection}
@@ -90,7 +92,7 @@
 \fancypagestyle{titlepage}{
    %\settototalheight{\headheight}{\maxof{\leftheadertitlepage}}
    \renewcommand{\headrulewidth}{0pt}
-   \lhead{\textit{\@yourname}\quad{\@yourstuid}}
+   \lhead{\kaiti{\@yourname}\quad{\@yourstuid}}
    \chead{}
    \rhead{\begin{picture}(0,0)
 		\put(-91.8,-10){\includegraphics[width=0.2\linewidth]{graphs/logo}}
@@ -106,7 +108,7 @@
 	\begin{picture}(0,0)
 		\put(-91.8,-10){\includegraphics[width=0.2\linewidth]{graphs/logo}}
 \end{picture}}
-\fancyhead[L]{\textit{\@labtitle}}
+\fancyhead[L]{\kaiti{\@labtitle}}
 \fancyfoot[C]{\thepage}
 
 \newcommand{\makeheader}{
