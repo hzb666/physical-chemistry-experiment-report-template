@@ -128,7 +128,14 @@
 \end{table}
 \thispagestyle{titlepage}
 }
-
+\makeatletter
+\renewcommand\normalsize{%
+ \abovedisplayskip 5\p@ \@plus2\p@ \@minus5\p@
+ \abovedisplayshortskip \z@ \@plus3\p@
+ \belowdisplayshortskip 4\p@ \@plus3\p@ \@minus3\p@
+ \belowdisplayskip \abovedisplayskip
+ \let\@listi\@listI}
+\makeatother
 \makeatletter
 \def\UrlAlphabet{%
 	\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
