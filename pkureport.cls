@@ -6,6 +6,7 @@
 \RequirePackage{amsmath}
 \RequirePackage{mhchem}
 \RequirePackage{ifthen}
+\RequirePackage{extarrows}
 \RequirePackage{ntheorem}
 \RequirePackage{pgf,tikz,pgfplots}
 \pgfplotsset{compat=1.15}
@@ -57,6 +58,22 @@
 \newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
 \newcommand{\degreec}{\ensuremath{\,^\circ}C}
 \newcommand{\bolang}{\,\textasciitilde\,}
+\renewcommand{\eqref}[1]{式(\ref{#1})}
+\newcommand{\figref}[1]{图\,\ref{#1}\,}
+\newcommand{\tabref}[1]{表\,\ref{#1}\,}
+\newcommand{\dt}{\mathrm{~d} t}
+\newcommand{\dx}{\mathrm{~d} x}
+\newcommand{\dtheta}{\mathrm{~d} \theta}
+\newcommand{\jg}{\\[1ex]}
+\def\tableunderline[#1]#2{
+	\uline{\hbox to #1{\hfil#2\hfil}}}
+\newcommand\labdate[1]{\def\@labdate{#1}}
+\newcommand\labtemperature[1]{\def\@labtemperature{#1}}
+\newcommand\labpressure[1]{\def\@labpressure{#1}}
+\newcommand\labpartner[1]{\def\@labpartner{#1}}
+\newcommand\labtitle[1]{\def\@labtitle{#1}}
+\newcommand\yourname[1]{\def\@yourname{#1}}
+\newcommand\yourstuid[1]{\def\@yourstuid{#1}}
 \CTEXsetup[format={\large\heiti}]{section}
 \CTEXsetup[format={\heiti}]{subsection}
 \ctexset{
@@ -75,20 +92,6 @@
 \setdescription{itemsep=0.8ex,partopsep=0pt,parsep=\parskip,topsep=5pt}
 \setlength{\parskip}{0.8ex}
 \geometry{left=2.5cm,right=2.5cm,top=2.84cm,bottom=2.54cm}
-\renewcommand{\eqref}[1]{式(\ref{#1})}
-\newcommand{\dt}{\mathrm{~d} t}
-\newcommand{\dx}{\mathrm{~d} x}
-\newcommand{\dtheta}{\mathrm{~d} \theta}
-\newcommand{\jg}{\\[1ex]}
-\def\tableunderline[#1]#2{
-	\underline{\hbox to #1{\hfil#2\hfil}}}
-\newcommand\labdate[1]{\def\@labdate{#1}}
-\newcommand\labtemperature[1]{\def\@labtemperature{#1}}
-\newcommand\labpressure[1]{\def\@labpressure{#1}}
-\newcommand\labpartner[1]{\def\@labpartner{#1}}
-\newcommand\labtitle[1]{\def\@labtitle{#1}}
-\newcommand\yourname[1]{\def\@yourname{#1}}
-\newcommand\yourstuid[1]{\def\@yourstuid{#1}}
 \fancypagestyle{titlepage}{
    %\settototalheight{\headheight}{\maxof{\leftheadertitlepage}}
    \renewcommand{\headrulewidth}{0pt}
@@ -120,9 +123,9 @@
  \addtolength{\leftskip} {-2cm}
     \addtolength{\rightskip}{-2cm}
 \begin{tabular}{c}
-		实验时间：\tableunderline[62pt]\@labdate
-		室温：\tableunderline[38pt]\@labtemperature
-		大气压： \tableunderline[65pt]\@labpressure
+		实验时间：\tableunderline[62pt]\@labdate\ 
+		室温：\tableunderline[38pt]\@labtemperature\ 
+		大气压： \tableunderline[65pt]\@labpressure\ 
 		合作者： \tableunderline[90pt]\@labpartner
 \end{tabular}
 \end{table}
