@@ -1,5 +1,5 @@
 \ProvidesClass{pkureport}
-\LoadClass[UTF8,12pt,a4paper]{ctexart}
+\LoadClass[UTF8,12pt,a4paper,twoside]{ctexart}
 \RequirePackage{color}
 \RequirePackage{microtype}
 \RequirePackage{hycolor}
@@ -74,14 +74,19 @@
 \newcommand\labtitle[1]{\def\@labtitle{#1}}
 \newcommand\yourname[1]{\def\@yourname{#1}}
 \newcommand\yourstuid[1]{\def\@yourstuid{#1}}
+\DeclareCaptionLabelSeparator{enspace}{\enspace}
+\captionsetup[figure]{labelsep=enspace}
+\captionsetup[table]{labelsep=enspace}
 \CTEXsetup[format={\large\heiti}]{section}
 \CTEXsetup[format={\heiti}]{subsection}
 \ctexset{
 	section={
+		beforeskip=16pt,
 		afterskip=5pt,
 		name = {,、\hspace*{-1.5ex}},
 		number = \chinese{section}}, 
 	subsection={
+		beforeskip=12pt,
 		afterskip=2pt, 
 		name = {,. \hspace*{-1.1ex}},
 		number = {\bfseries\arabic{subsection}},
@@ -111,7 +116,8 @@
 	\begin{picture}(0,0)
 		\put(-91.8,-10){\includegraphics[width=0.2\linewidth]{graphs/logo}}
 \end{picture}}
-\fancyhead[L]{\kaiti{\@labtitle}}
+\fancyhead[EL]{\kaiti{\@labtitle}}
+\fancyhead[OL]{\kaiti{\@yourname}\quad{\@yourstuid}}
 \fancyfoot[C]{\thepage}
 
 \newcommand{\makeheader}{
