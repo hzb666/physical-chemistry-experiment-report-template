@@ -30,7 +30,7 @@
 	\subsection{XXX}
 	XXX。
 	\subsection{一级反应}
-	一级反应的动力学方程\upcite{shu}为：
+	一级反应的动力学方程\upcite{jiema}为：
 	\begin{align}
 		-\frac{dC}{dt}&=kC\label{1}
 	\end{align}
@@ -49,6 +49,7 @@
 	XXX。
 	\clearpage
 	\section{实验步骤}
+	XXX。
 	
 	\printbibliography
 \end{document}
