@@ -39,10 +39,12 @@
 	\begin{align}
 		\ln{C} = -kt+\ln{C_0}\label{2}
 	\end{align}
+	
 	其中，$C_0$为反应物初浓度。注意到，当$C=\frac{1}{2}C_0$时，反应物浓度变为初始值的一半，此时的时间$t_{\frac{1}{2}}$称为一级反应的半衰期。由\eqref{2}得：
 	\begin{align}
 		t_{\frac{1}{2}} = \frac{\ln{2}}{k}=\frac{0.693}{k}\label{3}
 	\end{align}
+	
 	\eqref{3}即为一级反应的半衰期公式。
 	
 	\subsection{XXX}
@@ -54,5 +56,5 @@
 	\printbibliography
 \end{document}
 ```
-![document_00](https://user-images.githubusercontent.com/29155232/177955544-c202da82-6868-4daa-af73-aab5590a670e.png)
-![document_01](https://user-images.githubusercontent.com/29155232/177955557-a6062048-cc7f-40be-b48e-7e36a2772207.png)
+![document_00](https://user-images.githubusercontent.com/29155232/177956360-dae23404-df1a-46f2-9737-581d2c3497a9.png)
+![document_01](https://user-images.githubusercontent.com/29155232/177956365-0d49fb20-660f-4dd7-8926-75e9a7239db5.png)
