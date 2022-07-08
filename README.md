@@ -1,5 +1,5 @@
 # physical-chemistry-experiment-report-template
-最小示例如下，请自行查询cls文件安装方法，请注意需要下载/graphs文件夹。
+最小示例如下，请自行查询.cls文件安装方法，请注意需要下载/graphs文件夹。
 
 请使用texlive套件，并用xelatex编译。需要安装mtpro2宏包后使用，如果未安装mtpro2宏包，请自行注释掉.cls文件中的相关引用。
 ```latex
