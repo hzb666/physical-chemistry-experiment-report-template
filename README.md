@@ -50,9 +50,8 @@
 	\clearpage
 	\section{实验步骤}
 	
-	
 	\printbibliography
 \end{document}
 ```
-![1](https://user-images.githubusercontent.com/29155232/168256837-c3b0e70a-59dc-4b61-bf15-bd974c06e5b5.png)
-![2](https://user-images.githubusercontent.com/29155232/168256850-b433a69c-2471-42e7-bdac-20c2d32fdb7b.png)
+![document_00](https://user-images.githubusercontent.com/29155232/177955544-c202da82-6868-4daa-af73-aab5590a670e.png)
+![document_01](https://user-images.githubusercontent.com/29155232/177955557-a6062048-cc7f-40be-b48e-7e36a2772207.png)
