@@ -17,8 +17,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage[titletoc,title]{appendix}
 \RequirePackage{caption}
-\RequirePackage{times}
-%\RequirePackage[lite,subscriptcorrection ,slantedGreek ,nofontinfo]{mtpro2}
+\RequirePackage[lite,subscriptcorrection ,slantedGreek ,nofontinfo]{mtpro2}
 \RequirePackage{fontspec}
 \setmainfont{Times New Roman}
 \RequirePackage{setspace}
@@ -61,6 +60,7 @@
 \renewcommand{\eqref}[1]{式(\ref{#1})}
 \newcommand{\figref}[1]{图\,\ref{#1}\,}
 \newcommand{\tabref}[1]{表\,\ref{#1}\,}
+\newcommand{\dd}{\mathrm{d}}
 \newcommand{\dt}{\mathrm{~d} t}
 \newcommand{\dx}{\mathrm{~d} x}
 \newcommand{\dtheta}{\mathrm{~d} \theta}
@@ -112,18 +112,21 @@
 \pagenumbering{arabic}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[R]{
+\fancyhead[OR]{
 	\begin{picture}(0,0)
 		\put(-91.8,-10){\includegraphics[width=0.2\linewidth]{graphs/logo}}
 \end{picture}}
-\fancyhead[EL]{\kaiti{\@labtitle}}
+\fancyhead[EL]{
+	\begin{picture}(0,0)
+		\put(0,-10){\includegraphics[width=0.2\linewidth]{graphs/logo}}
+\end{picture}}
+\fancyhead[ER]{\kaiti{\@labtitle}}
 \fancyhead[OL]{\kaiti{\@yourname}\quad{\@yourstuid}}
 \fancyfoot[C]{\thepage}
 
 \newcommand{\makeheader}{
 \centerline{\Large \@labtitle}
 \vspace*{1ex}
-
 \begin{table}[!htbp]
 \centering
  \addtolength{\leftskip} {-2cm}
